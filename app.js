@@ -14,7 +14,6 @@ const xWins = document.getElementById('X-wins');
 const oWins = document.getElementById('O-wins');
 
 
-
 const currentGame = [
     [-1, -1, -1]
     ,[-1, -1, -1]
