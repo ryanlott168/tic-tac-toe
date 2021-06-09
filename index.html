@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="banner"></div>
+    <header>
+        <h1>Tic-Tac-Toe</h1>
+        <button id="newGame" onclick="restartGame()">New Game</button>
+    </header>
+    <main id="game-area">
+        <div id="turnBanner" class="sidebar"><span id="currentPlayer">X</span>'s Turn</div>
+        <div id="game-board">
+            <div id="TL" class="space top left"></div>
+            <div id="TC" class="space top center"></div>
+            <div id="TR" class="space top right"></div>
+            <div id="ML" class="space middle left"></div>
+            <div id="MC" class="space middle center"></div>
+            <div id="MR" class="space middle right"></div>
+            <div id="BL" class="space bottom left"></div>
+            <div id="BC" class="space bottom center"></div>
+            <div id="BR" class="space bottom right"></div>
+        </div>
+        <div id="win-tally" class="sidebar">
+            <span>Total Wins: </span>
+            <table>
+                <tr>
+                    <th style="color: red">X</th>
+                    <th style="color: blue">O</th>
+                </tr>
+                <tr>
+                    <td id="X-wins">0</td>
+                    <td id="O-wins">0</td>
+                </tr>
+            </table>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
